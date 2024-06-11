@@ -15,8 +15,9 @@ O NewsClassifier é uma aplicação que utiliza inteligência artificial para cl
     * Permite que o usuário explore conteúdos relevantes e descubra novas fontes de informação.
 
 ## Repositórios
-Front-end - https://github.com/lauannyrb/NewsClassifier-front.git
-Back-end - https://github.com/lauannyrb/NewsClassifier-back.git
+**Front-end** - https://github.com/lauannyrb/NewsClassifier-front.git
+
+**Back-end** - https://github.com/lauannyrb/NewsClassifier-back.git
 
 
 ## Tecnologias Utilizadas
