@@ -1,68 +1,71 @@
-# NewsClassifier
+## NewsClassifier
 
-## Classificador de Notícias com IA e Recomendação Personalizada
+### Classificador de Notícias com IA e Recomendação Personalizada
 
-O NewsClassifier é uma aplicação que utiliza inteligência artificial para classificar automaticamente notícias em diferentes categorias e fornecer recomendações personalizadas com base no conteúdo da notícia inserida pelo usuário.
+O NewsClassifier é uma aplicação que utiliza inteligência artificial para classificar automaticamente notícias em diferentes categorias e fornecer recomendações personalizadas.
 
-## Funcionalidades
+### Acesse o site clicando aqui: [NewsClassifier](https://newsclassifier-py.streamlit.app/)
 
-* **Classificação de Notícias:**
-    * Analisa o texto da notícia inserida pelo usuário.
-    * Utiliza algoritmos de aprendizado de máquina para identificar a categoria mais relevante (ex: política, esportes, tecnologia, entretenimento, etc.).
-    * Retorna a categoria da notícia para o usuário através da interface.
-* **Recomendação Personalizada:**
-    * Com base na categoria da notícia e no histórico de interação do usuário (opcional), sugere outras notícias relacionadas que possam ser do interesse do usuário.
-    * Permite que o usuário explore conteúdos relevantes e descubra novas fontes de informação.
+**Funcionalidades Principais:**
 
-## Repositórios
-**Front-end** - https://github.com/lauannyrb/NewsClassifier-front.git
+* **Classificação Automática:** Analisa a machete da notícia e a classifica em categorias relevantes (política, esportes, tecnologia, etc.).
+* **Recomendações Personalizadas:** Sugere outras notícias com base na categoria da notícia classificada.
+* **Interface Intuitiva:** Permite que os usuários insiram facilmente o título da notícia e visualizem os resultados da classificação e as recomendações.
 
-**Back-end** - https://github.com/lauannyrb/NewsClassifier-back.git
+**Tecnologias Utilizadas:**
 
-
-## Tecnologias Utilizadas
-
-* **Front-end:** React
+* **Framework Web:** Streamlit (Python)
 * **Back-end:** Python
-* **Framework de Machine Learning:** (a definir)
-* **Processamento de Linguagem Natural (PLN):** (a definir)
-* **Banco de Dados:** (a definir)
+* **Modelo de Machine Learning:** Naive Bayes (com TF-IDF para vetorização de texto)
+* **API de Notícias:** NewsAPI
+* **Outras Bibliotecas:** Pandas, Scikit-learn, Requests
 
-## Como Utilizar
+**Como Executar o Projeto:**
 
-1. **Clone o Repositório (Front-end):**
-   ```bash
-   git clone https://github.com/lauannyrb/NewsClassifier-front.git
-   ```
-2. **Instale as Dependências (Front-end):**
-   ```bash
-   npm install
-   ```
-3. **Inicie a Aplicação (Front-end):**
-   ```bash
-   npm start
-   ```
----
-4. **Clone o Repositório (Back-end):**
+1. **Clone o Repositório:**
    ```bash
    git clone https://github.com/lauannyrb/NewsClassifier-back.git
    ```
-5. **Instale as Dependências (Back-end):**
+2. **Crie e Ative o Ambiente Virtual (venv):**
+
+   a. **Crie o ambiente:**
+      ```bash
+      python -m venv venv
+      ```
+
+   b. **Ative o ambiente:**
+
+      * **No Linux/macOS:**
+         ```bash
+         source venv/bin/activate
+         ```
+
+      * **No Windows:**
+         ```bash
+         venv\Scripts\activate
+         ```
+3. **Instale as Dependências:**
    ```bash
    pip install -r requirements.txt
    ```
-6. **Inicie o Servidor (Back-end):**
+4. **Inicie o Aplicativo Streamlit:**
    ```bash
-   python app.py 
+   streamlit run app.py
    ```
----
-7. **Acesse a Aplicação:**
-   * Abra o navegador e acesse `http://localhost:3000`.
-8. **Insira a Notícia:**
-   * Cole o texto da notícia na interface do usuário.
-9. **Visualize o Resultado:**
-   * A categoria da notícia e as recomendações serão exibidas na interface.
+5. **Acesse a Aplicação:**
+   * Abra seu navegador e acesse `http://localhost:8501`.
+6. **Insira a Notícia:**
+   * Cole o título da notícia na área de texto fornecida.
+7. **Clique em "Classificar":**
+   * O aplicativo classificará a notícia e exibirá a categoria e as recomendações.
 
-## Créditos - Desenvolvedores 
-* [Lauanny Rodrigues](https://github.com/lauannyrb)
-* [Jonas Oliveira](https://github.com/Jonas-Oliveira-12)
+**Observações:**
+
+* Certifique-se de ter uma chave de API válida da NewsAPI e substitua o valor em `api_key` no código.
+* O arquivo `news_articles.csv` deve estar na mesma pasta do código `app.py` ou o caminho deve ser ajustado.
+
+**Desenvolvedores:**
+
+* Lauanny Rodrigues ([https://github.com/lauannyrb](https://github.com/lauannyrb))
+* Jonas Oliveira ([https://github.com/Jonas-Oliveira-12](https://github.com/Jonas-Oliveira-12))
+
